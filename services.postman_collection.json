@@ -1,0 +1,2178 @@
+{
+	"info": {
+		"_postman_id": "039b115b-148c-4617-9704-932943f3e30e",
+		"name": "service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15957577"
+	},
+	"item": [
+		{
+			"name": "projects",
+			"item": [
+				{
+					"name": "project",
+					"item": [
+						{
+							"name": "update project",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AUTH}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"asdf\",\n    \"description\": \"akhkjh kjkj \"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/service/project/:project_id",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"project",
+										":project_id"
+									],
+									"variable": [
+										{
+											"key": "project_id",
+											"value": "0dd22970854744ff99efa1b828f1e758"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update project",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"54\",\n    \"description\": \"akhkjh kjkj \"\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{API_URL}}/service/project/:project_id",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"service",
+												"project",
+												":project_id"
+											],
+											"variable": [
+												{
+													"key": "project_id",
+													"value": "2679ba7aabc7418092f76bcdce39141f"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 27 Jan 2023 18:44:43 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, PATCH, DELETE, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "105"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"alireza@gmail.com_54\",\n    \"description\": \"akhkjh kjkj \",\n    \"id\": \"2679ba7aabc7418092f76bcdce39141f\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete project",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AUTH}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/service/project/:project_id",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"project",
+										":project_id"
+									],
+									"variable": [
+										{
+											"key": "project_id",
+											"value": "2679ba7aabc7418092f76bcdce39141f"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete project",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"54\",\n    \"description\": \"akhkjh kjkj \"\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{API_URL}}/service/project/:project_id",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"service",
+												"project",
+												":project_id"
+											],
+											"variable": [
+												{
+													"key": "project_id",
+													"value": "2679ba7aabc7418092f76bcdce39141f"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 27 Jan 2023 20:45:13 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.6"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, PATCH, DELETE, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "get project detail",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AUTH}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/service/project/:project_id",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"project",
+										":project_id"
+									],
+									"variable": [
+										{
+											"key": "project_id",
+											"value": "a45d068695514ffe8680b1d8a342ea3d"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get project detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{API_URL}}/service/project/:project_id",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"service",
+												"project",
+												":project_id"
+											],
+											"variable": [
+												{
+													"key": "project_id",
+													"value": "a45d068695514ffe8680b1d8a342ea3d"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 29 Jan 2023 21:08:41 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, PATCH, DELETE, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "111"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"aaaa@gmail.com_default\",\n    \"description\": \"Default project!\",\n    \"id\": \"a45d068695514ffe8680b1d8a342ea3d\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get all user project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/projects/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"projects",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all user project",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/project/projects/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"project",
+										"projects",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 22 Dec 2022 18:55:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "226"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"description\": \"Bootstrap project for initializing the cloud.\",\n        \"id\": \"6de0934d59ca4055a3ff55195681cc80\",\n        \"name\": \"admin\"\n    },\n    {\n        \"description\": \"\\\"Service Project\\\"\",\n        \"id\": \"d2546b672f584a36b993326ededae76b\",\n        \"name\": \"service\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "create project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ali2_project_name\",\n    \"description\": \"this is test project\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/service/projects/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"projects",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create project",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"project name\",\n    \"description\": \"this is test project\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/project/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"project",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 22 Dec 2022 19:58:41 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"project name\",\n    \"description\": \"this is test project\",\n    \"id\": \"id12123\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "image",
+			"item": [
+				{
+					"name": "get all os",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/image",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"image"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all os",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/service/image",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"image"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 18:17:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"b4512d7c-4b6e-4fdd-b2ff-bc0d3e6f1ac1\",\n            \"size\": 12716032,\n            \"name\": \"cirros\",\n            \"min_disk\": 0,\n            \"min_ram\": 0,\n            \"os_distro\": \"ubuntu\",\n            \"os_version\": \"2022\",\n            \"os_admin_user\": \"ubuntu\",\n            \"created_at\": \"2022-12-21T09:20:33Z\",\n            \"photo\": \"https://static.ferdowsi.cloud/os/windows.png\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "flavor",
+			"item": [
+				{
+					"name": "get flavor list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/flavor/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"flavor",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get flavor list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/service/flavor/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"flavor",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jan 2023 13:16:46 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1081"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"1\",\n            \"cpu\": {\n                \"size\": 1,\n                \"unit\": \"core\"\n            },\n            \"ram\": {\n                \"size\": 512,\n                \"unit\": \"mb\"\n            },\n            \"name\": \"m1.tiny\",\n            \"disk\": {\n                \"size\": 1,\n                \"unit\": \"Gb\"\n            },\n            \"ratings\": {\n                \"monthly\": 379929600,\n                \"daily\": 12664320,\n                \"hourly\": 527680\n            }\n        },\n        {\n            \"id\": \"2\",\n            \"cpu\": {\n                \"size\": 1,\n                \"unit\": \"core\"\n            },\n            \"ram\": {\n                \"size\": 2048,\n                \"unit\": \"mb\"\n            },\n            \"name\": \"m1.small\",\n            \"disk\": {\n                \"size\": 20,\n                \"unit\": \"Gb\"\n            },\n            \"ratings\": {\n                \"monthly\": 379929600,\n                \"daily\": 12664320,\n                \"hourly\": 527680\n            }\n        },\n        {\n            \"id\": \"3\",\n            \"cpu\": {\n                \"size\": 2,\n                \"unit\": \"core\"\n            },\n            \"ram\": {\n                \"size\": 4096,\n                \"unit\": \"mb\"\n            },\n            \"name\": \"m1.medium\",\n            \"disk\": {\n                \"size\": 40,\n                \"unit\": \"Gb\"\n            },\n            \"ratings\": {\n                \"monthly\": 379929600,\n                \"daily\": 12664320,\n                \"hourly\": 527680\n            }\n        },\n        {\n            \"id\": \"4\",\n            \"cpu\": {\n                \"size\": 4,\n                \"unit\": \"core\"\n            },\n            \"ram\": {\n                \"size\": 8192,\n                \"unit\": \"mb\"\n            },\n            \"name\": \"m1.large\",\n            \"disk\": {\n                \"size\": 80,\n                \"unit\": \"Gb\"\n            },\n            \"ratings\": {\n                \"monthly\": 379929600,\n                \"daily\": 12664320,\n                \"hourly\": 527680\n            }\n        },\n        {\n            \"id\": \"5\",\n            \"cpu\": {\n                \"size\": 8,\n                \"unit\": \"core\"\n            },\n            \"ram\": {\n                \"size\": 16384,\n                \"unit\": \"mb\"\n            },\n            \"name\": \"m1.xlarge\",\n            \"disk\": {\n                \"size\": 160,\n                \"unit\": \"Gb\"\n            },\n            \"ratings\": {\n                \"monthly\": 379929600,\n                \"daily\": 12664320,\n                \"hourly\": 527680\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "keypair",
+			"item": [
+				{
+					"name": "create or import keypair",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"key_name232\",\n    \"public_key\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDW0ItYsFN7R8wWC/V9zZgHyg+wwNsru8QgR9CVRUAKFD5dRCqLoejj/AUqjmUHjBi0FTEhZ4S4I/atG6lLgoeUxFBylbf86aZyq29GKS4SNvVaiHL08APQ3QO0GpMIMCk12dg59wd80EF3bd9+T5Mu/yHMvpXqb7oHuLi0q/E9Cwe9nxvvORMuWKUsR8J/y8swLnSL19fEmubrMtlgRDvgACKQ8jUhejQp5P8hzAbD0Qp4t3IUTGnM4rEjexC9vAqJEIATOOPY+VuW0ohfDGPJItbWjNHm9igGwhO+X3hex2LR5LZAqSPg9wVEbblITV6oOlqlZOiSugC9LE7F28WvV8a0QmG8GOGDjv5GIwWLWHnnxBt+NXRdolobN3zYiFgPNk2yJQp6z1M99VOTK3bW571Uqt/No5fI2HJM0DYb2pS/fiCODOk07hOgeuvyqOtCZtlmDTX90G/LNzjN9X/nzCB+XtTpvfyQ3YfctgyasfZZz7eLZNWbg5nHbEtD/ND0KGl6S6R7tk94tIjwoXVtb12r8xF0jT81u1gOp9wMYIRKlvtGw/bK3/Z5WxTpOc0HKCB9VR77hDyvwKJ2+esTjZ1ld0anaRDQNYOCYSjeIaib3ZNZELz4GcqoU8yBXd2H4JxyfsEONDVlp9FhpcwPq1+n5O3qbvvRHUmfTMLOAw== alireza@ARA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/service/keypair",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"keypair"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/service/keypair",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"keypair"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jan 2023 08:55:55 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": [\n        \"This field is required.\"\n    ],\n    \"public_key\": [\n        \"This field is required.\"\n    ]\n}"
+						},
+						{
+							"name": "create keypair",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"alires12\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/service/keypair",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"keypair"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 28 Jan 2023 22:29:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "436"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"alires12\",\n    \"public_key\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCz5fMiDNpbM0iUZkGBabRczv96fP5aMEJBrQUowPcoL8gQho+Njq3ehSY6PtFXk65jg/347k5q0cneSg28Nom8OUqA7Qs/Pzqy1maYMYQDOoOGy+hpVZuwRhi/MLVpiOTkKzK5vr6Y89yfOnYtt4ZhKjneYPVWKZ0XfNy+VuIzNcLyiVEkYMSRgStTK5jxQ0ANyj9dog1Of2Zz1c2W0m/yPrBspBj0YOqlDgPw2m2Qo0CfxAjnqQTAD4aaGi9n7J4gkhP1ivVHUje9ScAk+mrpO3BDgFz70L7fPECCg3dR1aR0GLWNI2lGsVhozcsH6Ye1xnumyyuE/8PZWH9hwevd Generated-by-Nova\"\n}"
+						},
+						{
+							"name": "import keypair",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"123asd\",\n    \"public_key\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDW0ItYsFN7R8wWC/V9zZgHyg+wwNsru8QgR9CVRUAKFD5dRCqLoejj/AUqjmUHjBi0FTEhZ4S4I/atG6lLgoeUxFBylbf86aZyq29GKS4SNvVaiHL08APQ3QO0GpMIMCk12dg59wd80EF3bd9+T5Mu/yHMvpXqb7oHuLi0q/E9Cwe9nxvvORMuWKUsR8J/y8swLnSL19fEmubrMtlgRDvgACKQ8jUhejQp5P8hzAbD0Qp4t3IUTGnM4rEjexC9vAqJEIATOOPY+VuW0ohfDGPJItbWjNHm9igGwhO+X3hex2LR5LZAqSPg9wVEbblITV6oOlqlZOiSugC9LE7F28WvV8a0QmG8GOGDjv5GIwWLWHnnxBt+NXRdolobN3zYiFgPNk2yJQp6z1M99VOTK3bW571Uqt/No5fI2HJM0DYb2pS/fiCODOk07hOgeuvyqOtCZtlmDTX90G/LNzjN9X/nzCB+XtTpvfyQ3YfctgyasfZZz7eLZNWbg5nHbEtD/ND0KGl6S6R7tk94tIjwoXVtb12r8xF0jT81u1gOp9wMYIRKlvtGw/bK3/Z5WxTpOc0HKCB9VR77hDyvwKJ2+esTjZ1ld0anaRDQNYOCYSjeIaib3ZNZELz4GcqoU8yBXd2H4JxyfsEONDVlp9FhpcwPq1+n5O3qbvvRHUmfTMLOAw== alireza@ARA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/service/keypair",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"keypair"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 28 Jan 2023 22:30:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "772"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"123asd\",\n    \"public_key\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDW0ItYsFN7R8wWC/V9zZgHyg+wwNsru8QgR9CVRUAKFD5dRCqLoejj/AUqjmUHjBi0FTEhZ4S4I/atG6lLgoeUxFBylbf86aZyq29GKS4SNvVaiHL08APQ3QO0GpMIMCk12dg59wd80EF3bd9+T5Mu/yHMvpXqb7oHuLi0q/E9Cwe9nxvvORMuWKUsR8J/y8swLnSL19fEmubrMtlgRDvgACKQ8jUhejQp5P8hzAbD0Qp4t3IUTGnM4rEjexC9vAqJEIATOOPY+VuW0ohfDGPJItbWjNHm9igGwhO+X3hex2LR5LZAqSPg9wVEbblITV6oOlqlZOiSugC9LE7F28WvV8a0QmG8GOGDjv5GIwWLWHnnxBt+NXRdolobN3zYiFgPNk2yJQp6z1M99VOTK3bW571Uqt/No5fI2HJM0DYb2pS/fiCODOk07hOgeuvyqOtCZtlmDTX90G/LNzjN9X/nzCB+XtTpvfyQ3YfctgyasfZZz7eLZNWbg5nHbEtD/ND0KGl6S6R7tk94tIjwoXVtb12r8xF0jT81u1gOp9wMYIRKlvtGw/bK3/Z5WxTpOc0HKCB9VR77hDyvwKJ2+esTjZ1ld0anaRDQNYOCYSjeIaib3ZNZELz4GcqoU8yBXd2H4JxyfsEONDVlp9FhpcwPq1+n5O3qbvvRHUmfTMLOAw== alireza@ARA\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get keypair list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/keypair",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"keypair"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get keypair list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/service/keypair",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"keypair"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jan 2023 09:01:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2078"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"alireza-test-key-pair\",\n            \"name\": \"alireza-test-key-pair\",\n            \"public_key\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDW0ItYsFN7R8wWC/V9zZgHyg+wwNsru8QgR9CVRUAKFD5dRCqLoejj/AUqjmUHjBi0FTEhZ4S4I/atG6lLgoeUxFBylbf86aZyq29GKS4SNvVaiHL08APQ3QO0GpMIMCk12dg59wd80EF3bd9+T5Mu/yHMvpXqb7oHuLi0q/E9Cwe9nxvvORMuWKUsR8J/y8swLnSL19fEmubrMtlgRDvgACKQ8jUhejQp5P8hzAbD0Qp4t3IUTGnM4rEjexC9vAqJEIATOOPY+VuW0ohfDGPJItbWjNHm9igGwhO+X3hex2LR5LZAqSPg9wVEbblITV6oOlqlZOiSugC9LE7F28WvV8a0QmG8GOGDjv5GIwWLWHnnxBt+NXRdolobN3zYiFgPNk2yJQp6z1M99VOTK3bW571Uqt/No5fI2HJM0DYb2pS/fiCODOk07hOgeuvyqOtCZtlmDTX90G/LNzjN9X/nzCB+XtTpvfyQ3YfctgyasfZZz7eLZNWbg5nHbEtD/ND0KGl6S6R7tk94tIjwoXVtb12r8xF0jT81u1gOp9wMYIRKlvtGw/bK3/Z5WxTpOc0HKCB9VR77hDyvwKJ2+esTjZ1ld0anaRDQNYOCYSjeIaib3ZNZELz4GcqoU8yBXd2H4JxyfsEONDVlp9FhpcwPq1+n5O3qbvvRHUmfTMLOAw== alireza@ARA\"\n        },\n        {\n            \"id\": \"alirezaKey\",\n            \"name\": \"alirezaKey\",\n            \"public_key\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCdV+HtV8WevYs6glKn0svYJOk9ESTCbwbysK/vXtsX6GrXgTSYHkVE+OJ0SctkWrim4/NIHBD4eWL5bpPnalqw5RSBUkCE9Ym8QreLwAB1F21E5UxdIknedDSA7IAoNhVhlCDWxc/d4/P8NPGl0iMbLj5bUohTzJupYYstMQRNU5efptdpubmGZo4x1fQ5belnpnROZFB8TfrCQfFix4xTAOVEgBJ4/Xgp22qXfjISeGIblnjJBaj6WqS5d5p0W1WtHDScb1KQVFJe5wmC+vC5aYoIyJV03h5CNUpr0ATEK9sxLy1VCEAUdMHCtIViPTB209AJn35IIMWre/cYyqiPRYgE5agUS3loc8P8DWC028iOIJxXGV+gtsMKG/u0LVIhAr8WKkemdLUw/3/LZttsUFPfc5dKQpp79ciksq7MFxeL6rCtcV6Hjua/IXv961CsAyEIopW6sk+iqWDq3Z/PkdQZ6PT2fBCjTc68AQiE36zbj2uZ8PW86F7UocdwfJE= alireza@ARA\"\n        },\n        {\n            \"id\": \"mykey\",\n            \"name\": \"mykey\",\n            \"public_key\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDw+YNE+Kl47fcSTvAcJm/yqrLkTDA4AS9xPOJsvGvMOekUHLznJJfidRm8CYtS3V8v+RbHSS4AeV1TcoBnCl8aUnmyqgmxm0yBiqKwCNVzUfb2GH8SCZQXU2PYanyz7Jks04h0ppk6FYjdbnE82XDYLcyYE67FsctBxkYwpKt7Nms4TB/ShbT3BTYbSsN4OzZqRA4hR2q1JZxaa7xmQ4YIPiU9JYoi5s6NePC0HKH5MjqrOx5wyhtRTYdSxInWSTsIOuBPJhmpADd06lMvgEbL8Y6P4PgtucK3V7Dfpr9+y2IItMS1Il6uYkv5YzZFMpzLwrHEuVeSbHXShKwM7gpIimfY7Qq6qhO0i/I7XvA1he5vTmlk6XyHbZuSQ+80YBkXShB6w+L68w3P9S7e0HCtqSB92a3ZIPS8kuppNBqJ8Pgo4qit7OsVzROYXEavzdWbfYBN0pm3gyyDOSGlkSvty8RKt1dohbmvglsuTw2WG5mQ+Bl7zcIEMO84OhYalac= root@deployment\\n\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "vm",
+			"item": [
+				{
+					"name": "create vm",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"project_id\":\"9ce8e8fb60064e6cb7348e42f66cc5b5\" , \n    \"image_id\":\"23f44f19-0aac-49d5-8a2a-342d691f03a9\",\n    \"name\":\"new project1212\" , \n    \"flavor_id\":2 , \n    \"keypair_id\":\"key_name232\",\n    \"instance_count\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/service/vm/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"vm",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create vm",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"image_id\":\"23f44f19-0aac-49d5-8a2a-342d691f03a9\",\n    \"name\":\"testdjango\" , \n    \"flavor_id\":1 , \n    \"keypair_id\":\"alirezaKey\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/service/vm/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"vm",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 10:33:18 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "17"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "get user vms",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/vm/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"vm",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "virtual_machine_id",
+									"value": "afb2dc0e-00d6-4fa1-b328-7afddb923cae",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get user vms",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/service/:project_id/vm/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										":project_id",
+										"vm",
+										""
+									],
+									"variable": [
+										{
+											"key": "project_id",
+											"value": "62e499cff78345838b5fa76e48db2db9"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jan 2023 13:19:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1095"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"accessIPv4\": \"\",\n            \"accessIPv6\": \"\",\n            \"addresses\": {\n                \"server12@server.com_default_network\": [\n                    {\n                        \"version\": 4,\n                        \"addr\": \"192.168.199.168\",\n                        \"OS-EXT-IPS:type\": \"fixed\",\n                        \"OS-EXT-IPS-MAC:mac_addr\": \"fa:16:3e:65:b3:fb\"\n                    }\n                ]\n            },\n            \"created\": \"2023-01-18T12:27:08Z\",\n            \"id\": \"b546821a-1a5f-4564-b555-220dc839d10d\",\n            \"image\": {\n                \"id\": \"23f44f19-0aac-49d5-8a2a-342d691f03a9\",\n                \"size\": 570026496,\n                \"name\": \"debian10\",\n                \"min_disk\": 0,\n                \"min_ram\": 0,\n                \"os_distro\": \"debian\",\n                \"os_version\": \"1\",\n                \"os_admin_user\": \"root\",\n                \"created_at\": \"2022-10-10T04:42:51Z\",\n                \"photo\": \"https://static.ferdowsi.cloud/os/debian.png\"\n            },\n            \"key_name\": \"key_name232\",\n            \"metadata\": {},\n            \"name\": \"testdjango12\",\n            \"networks\": {\n                \"server12@server.com_default_network\": [\n                    \"192.168.199.168\"\n                ]\n            },\n            \"project_id\": \"62e499cff78345838b5fa76e48db2db9\",\n            \"status\": \"ACTIVE\",\n            \"hostId\": \"0c424e658a28656660678d1363a09d977e9c5a549f07e586035bf43c\",\n            \"flavor\": {\n                \"id\": \"2\",\n                \"cpu\": {\n                    \"size\": 1,\n                    \"unit\": \"core\"\n                },\n                \"ram\": {\n                    \"size\": 2048,\n                    \"unit\": \"mb\"\n                },\n                \"name\": \"m1.small\",\n                \"disk\": {\n                    \"size\": 20,\n                    \"unit\": \"Gb\"\n                },\n                \"ratings\": {\n                    \"monthly\": 379929600,\n                    \"daily\": 12664320,\n                    \"hourly\": 527680\n                }\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "apply operation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"operation\": \"hard_reboot\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/service/vm/operation/?project_id=9ce8e8fb60064e6cb7348e42f66cc5b5&virtual_machine_id=816d19e4-90c6-465d-b961-01069a4d2276",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"vm",
+								"operation",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "9ce8e8fb60064e6cb7348e42f66cc5b5"
+								},
+								{
+									"key": "virtual_machine_id",
+									"value": "816d19e4-90c6-465d-b961-01069a4d2276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get vm console url",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/vm/console/?project_id=7c34206c4ad447e0870f9a844618be3c&virtual_machine_id=c99ee88d-8011-4770-b7d4-f94d56e916a0",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"vm",
+								"console",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "7c34206c4ad447e0870f9a844618be3c"
+								},
+								{
+									"key": "virtual_machine_id",
+									"value": "c99ee88d-8011-4770-b7d4-f94d56e916a0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get vm console url Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/vm/security-groups/?project_id=9ce8e8fb60064e6cb7348e42f66cc5b5&virtual_machine_id=05b04fe3-9e54-426b-aa87-19a43ff10d54",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"vm",
+								"security-groups",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "9ce8e8fb60064e6cb7348e42f66cc5b5"
+								},
+								{
+									"key": "virtual_machine_id",
+									"value": "05b04fe3-9e54-426b-aa87-19a43ff10d54"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create snap shot",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"project_id\": \"9ce8e8fb60064e6cb7348e42f66cc5b5\",\n    \"virtual_machine_id\": \"05b04fe3-9e54-426b-aa87-19a43ff10d54\",\n    \"name\": \"snap-shot-test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/service/vm/snap-shot/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"vm",
+								"snap-shot",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get snap shot",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"project_id\": \"9ce8e8fb60064e6cb7348e42f66cc5b5\",\n    \"virtual_machine_id\": \"05b04fe3-9e54-426b-aa87-19a43ff10d54\",\n    \"name\": \"snap-shot-test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/service/vm/snap-shot/?project_id=a7b829aef87f4640a314c1b49a134d35",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"vm",
+								"snap-shot",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "a7b829aef87f4640a314c1b49a134d35"
+								},
+								{
+									"key": "virtual_machine_id",
+									"value": "d522129f-e432-4245-8639-f00722d52a4923",
+									"description": "this is optional",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get project or vm snap shots",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"project_id\": \"9ce8e8fb60064e6cb7348e42f66cc5b5\",\n    \"virtual_machine_id\": \"05b04fe3-9e54-426b-aa87-19a43ff10d54\",\n    \"name\": \"snap-shot-test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/service/vm/snap-shot/?project_id=a7b829aef87f4640a314c1b49a134d35",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"vm",
+										"snap-shot",
+										""
+									],
+									"query": [
+										{
+											"key": "project_id",
+											"value": "a7b829aef87f4640a314c1b49a134d35"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 28 Feb 2023 09:59:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1251"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"owner\": \"a7b829aef87f4640a314c1b49a134d35\",\n            \"is_public\": false,\n            \"min_disk\": 20,\n            \"protected\": false,\n            \"created_at\": \"2023-02-27T10:51:06Z\",\n            \"architecture\": null,\n            \"status\": \"active\",\n            \"disk_format\": \"qcow2\",\n            \"size\": 1434779648,\n            \"visibility\": \"private\",\n            \"container_format\": \"bare\",\n            \"updated_at\": \"2023-02-27T10:52:27Z\",\n            \"name\": \"snap-shot-test\",\n            \"min_ram\": 0,\n            \"id\": \"026ef2a4-c2e2-4691-b5b3-203f46959f8d\",\n            \"checksum\": \"28fe67d5328dca223eec58e507dd9147\",\n            \"properties\": {\n                \"photo\": \"https://static.ferdowsi.cloud/os/debian.png\",\n                \"os_version\": \"1\",\n                \"os_admin_user\": \"root\",\n                \"os_distro\": \"debian\",\n                \"base_image_ref\": \"23f44f19-0aac-49d5-8a2a-342d691f03a9\",\n                \"owner_user_name\": \"27feb@gmail.com\",\n                \"owner_project_name\": \"27feb@gmail.com_default\",\n                \"boot_roles\": \"member,reader\",\n                \"hw_machine_type\": \"pc\",\n                \"instance_uuid\": \"d522129f-e432-4245-8639-f00722d52a49\",\n                \"user_id\": \"e3a72afaae704c10abcf94f4357d8a38\",\n                \"image_type\": \"snapshot\",\n                \"owner_id\": \"a7b829aef87f4640a314c1b49a134d35\",\n                \"image_state\": \"available\",\n                \"image_location\": \"snapshot\",\n                \"os_hidden\": false,\n                \"os_hash_algo\": \"sha512\",\n                \"os_hash_value\": \"d3a3c038adfba9a0e17e1f091b815f4e7e5aec0566bf7e8303a11e78c66e06fc4b97eceb0c14db6bab65551fd2a6fd3393e40e89b89a87ca338f89797ac7cdc6\",\n                \"stores\": \"file\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "delete snaphsot",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"project_id\": \"9ce8e8fb60064e6cb7348e42f66cc5b5\",\n    \"virtual_machine_id\": \"05b04fe3-9e54-426b-aa87-19a43ff10d54\",\n    \"name\": \"snap-shot-test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/service/vm/snap-shot/?project_id=a7b829aef87f4640a314c1b49a134d35",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"vm",
+								"snap-shot",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "a7b829aef87f4640a314c1b49a134d35"
+								},
+								{
+									"key": "virtual_machine_id",
+									"value": "d522129f-e432-4245-8639-f00722d52a4923",
+									"description": "this is optional",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete snaphsot",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"project_id\": \"9ce8e8fb60064e6cb7348e42f66cc5b5\",\n    \"virtual_machine_id\": \"05b04fe3-9e54-426b-aa87-19a43ff10d54\",\n    \"name\": \"snap-shot-test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/service/vm/snap-shot/?project_id=a7b829aef87f4640a314c1b49a134d35&snapshot_id=ef32056e-0a32-463a-8ecd-d69ece405a2a",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"vm",
+										"snap-shot",
+										""
+									],
+									"query": [
+										{
+											"key": "project_id",
+											"value": "a7b829aef87f4640a314c1b49a134d35"
+										},
+										{
+											"key": "snapshot_id",
+											"value": "ef32056e-0a32-463a-8ecd-d69ece405a2a"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 28 Feb 2023 11:26:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "17"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "security groups",
+			"item": [
+				{
+					"name": "get project sercurity groups",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/security-groups/?project_id=6cff945a38c349899eb2ed6755f927b2",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"security-groups",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "6cff945a38c349899eb2ed6755f927b2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get project sercurity groups",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/service/security-groups/?project_id=6cff945a38c349899eb2ed6755f927b2",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"security-groups",
+										""
+									],
+									"query": [
+										{
+											"key": "project_id",
+											"value": "6cff945a38c349899eb2ed6755f927b2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "create security group in project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"testsg\" , \n    \"description\":\"test for sg des\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/service/security-groups/?project_id=6cff945a38c349899eb2ed6755f927b2",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"security-groups",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "6cff945a38c349899eb2ed6755f927b2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create security group in project",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"testsg\" , \n    \"description\":\"test for sg des\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/service/security-groups/?project_id=6cff945a38c349899eb2ed6755f927b2",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"security-groups",
+										""
+									],
+									"query": [
+										{
+											"key": "project_id",
+											"value": "6cff945a38c349899eb2ed6755f927b2"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "delete security group",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/security-groups/?project_id=6cff945a38c349899eb2ed6755f927b2&security_id=2fc65bc3-e73b-4232-a66f-e32aad3a8f14",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"security-groups",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "6cff945a38c349899eb2ed6755f927b2"
+								},
+								{
+									"key": "security_id",
+									"value": "2fc65bc3-e73b-4232-a66f-e32aad3a8f14"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete security group",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/service/security-groups/?project_id=6cff945a38c349899eb2ed6755f927b2&security_id=f6f660c8-50dd-4d9f-bd6d-e4f7cbef0cbc",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"service",
+										"security-groups",
+										""
+									],
+									"query": [
+										{
+											"key": "project_id",
+											"value": "6cff945a38c349899eb2ed6755f927b2"
+										},
+										{
+											"key": "security_id",
+											"value": "f6f660c8-50dd-4d9f-bd6d-e4f7cbef0cbc"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 29 Jan 2023 16:21:59 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.6"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "add rule",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"security_group_id\":\"175de173-ca96-4cf5-91f1-12362f0df0a1\",\n\"direction\": \"ingress\",\n\"ether_type\":\"IPv4\",\n\"protocol\":\"tcp\",\n\"port_range_max\":\"123\",\n\"port_range_min\":\"12\",\n\"remote_ip_prefix\":\"12.12.12.12\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/service/security-group-rule/?project_id=6cff945a38c349899eb2ed6755f927b2",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"security-group-rule",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "6cff945a38c349899eb2ed6755f927b2"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete rule",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/service/security-group-rule/?project_id=6cff945a38c349899eb2ed6755f927b2&rule_id=d239ebbd-ec5e-4d85-b7fd-7b4a721ba41f",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"service",
+								"security-group-rule",
+								""
+							],
+							"query": [
+								{
+									"key": "project_id",
+									"value": "6cff945a38c349899eb2ed6755f927b2"
+								},
+								{
+									"key": "rule_id",
+									"value": "d239ebbd-ec5e-4d85-b7fd-7b4a721ba41f"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
